@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-from excel import excel_table_byindex
+from excel import excel_to_list
 import os
 
 
 def operate_file(old_file='file.ini'):
-    info = excel_table_byindex()
+    info = excel_to_list()
     for i in range(len(info)):
         instance_name = info[i]['NAME']
         with open(old_file, 'r') as fr:
